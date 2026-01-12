@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AutoDirect Insurance Agency Ltd - Comprehensive insurance solutions for auto, home, life, and business in Kenya">
+    <title>AutoDirect Insurance Agency Ltd - Your Trusted Insurance Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="logo.png" alt="AutoDirect Insurance" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="logo-text">AUTODIRECT</span>
+                    </a>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#insurance-types">Insurance Types</a>
+                    <a href="#about">About Us</a>
+                    <a href="#claims">Claims</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#" class="btn-login">Log In</a>
+                </div>
+                
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Alert Banner -->
+        <div class="alert-banner">
+            <p>🔒 Secure Your Future Today - Get Instant Quotes Online</p>
+        </div>
+    </header>
+
+    <!-- Hero Section with Quote Generator -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">The Insurance Coverage You Need</h1>
+                <p class="hero-subtitle">Get comprehensive protection and peace of mind. Start by entering your details below:</p>
+            </div>
+            
+            <div class="quote-generator">
+                <h2>Get Your Free Quote</h2>
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-group">
+                        <input type="text" id="zipCode" placeholder="Enter Your Location (e.g., Nairobi)" required>
+                        <button type="button" class="btn-location" aria-label="Use my location">📍</button>
+                    </div>
+                    
+                    <div class="insurance-types-grid">
+                        <label class="insurance-card">
+                            <input type="radio" name="insuranceType" value="auto" checked>
+                            <div class="card-content">
+                                <span class="icon">🚗</span>
+                                <span class="label">Auto</span>
+                            </div>
+                        </label>
+                        
+                        <label class="insurance-card">
+                            <input type="radio" name="insuranceType" value="home">
+                            <div class="card-content">
+                                <span class="icon">🏠</span>
+                                <span class="label">Homeowners</span>
+                            </div>
+                        </label>
+                        
+                        <label class="insurance-card">
+                            <input type="radio" name="insuranceType" value="renters">
+                            <div class="card-content">
+                                <span class="icon">🏢</span>
+                                <span class="label">Renters</span>
+                            </div>
+                        </label>
+                        
+                        <label class="insurance-card">
+                            <input type="radio" name="insuranceType" value="motorcycle">
+                            <div class="card-content">
+                                <span class="icon">🏍️</span>
+                                <span class="label">Motorcycle</span>
+                            </div>
+                        </label>
+                        
+                        <label class="insurance-card">
+                            <input type="radio" name="insuranceType" value="life">
+                            <div class="card-content">
+                                <span class="icon">❤️</span>
+                                <span class="label">Life</span>
+                            </div>
+                        </label>
+                        
+                        <label class="insurance-card">
+                            <input type="radio" name="insuranceType" value="business">
+                            <div class="card-content">
+                                <span class="icon">💼</span>
+                                <span class="label">Business</span>
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-get-quote">Get Quote</button>
+                </form>
+                
+                <div class="additional-links">
+                    <a href="#more-types">View More Insurance Types</a>
+                </div>
+            </div>
+            
+            <div class="hero-mascot">
+                <div class="mascot-circle">
+                    <img src="mascot.png" alt="AutoDirect Mascot" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Why Choose AutoDirect?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast & Easy</h3>
+                    <p>Get quotes in minutes with our streamlined online process</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Competitive Rates</h3>
+                    <p>Save money with our affordable premiums and discounts</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Comprehensive Coverage</h3>
+                    <p>Protect what matters most with our wide range of policies</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>24/7 Support</h3>
+                    <p>Access your policy and file claims anytime, anywhere</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Types Section -->
+    <section id="insurance-types" class="insurance-types-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Our Insurance Solutions</h2>
+            <div class="insurance-products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-icon">🚗</span>
+                    </div>
+                    <h3>Auto Insurance</h3>
+                    <p>Comprehensive coverage for your vehicle including third-party, comprehensive, and collision protection.</p>
+                    <ul class="product-features">
+                        <li>Third-party liability</li>
+                        <li>Comprehensive coverage</li>
+                        <li>Personal accident cover</li>
+                        <li>Windscreen protection</li>
+                    </ul>
+                    <a href="#quote" class="btn-secondary">Get Quote</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-icon">🏠</span>
+                    </div>
+                    <h3>Home Insurance</h3>
+                    <p>Protect your home and belongings from fire, theft, natural disasters, and more.</p>
+                    <ul class="product-features">
+                        <li>Building structure</li>
+                        <li>Contents coverage</li>
+                        <li>Liability protection</li>
+                        <li>Alternative accommodation</li>
+                    </ul>
+                    <a href="#quote" class="btn-secondary">Get Quote</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-icon">❤️</span>
+                    </div>
+                    <h3>Life Insurance</h3>
+                    <p>Secure your family's financial future with our flexible life insurance plans.</p>
+                    <ul class="product-features">
+                        <li>Term life insurance</li>
+                        <li>Whole life coverage</li>
+                        <li>Critical illness rider</li>
+                        <li>Education benefit</li>
+                    </ul>
+                    <a href="#quote" class="btn-secondary">Get Quote</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-icon">💼</span>
+                    </div>
+                    <h3>Business Insurance</h3>
+                    <p>Comprehensive protection for your business assets, employees, and operations.</p>
+                    <ul class="product-features">
+                        <li>Property insurance</li>
+                        <li>Liability coverage</li>
+                        <li>Employee benefits</li>
+                        <li>Business interruption</li>
+                    </ul>
+                    <a href="#quote" class="btn-secondary">Get Quote</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-icon">🏥</span>
+                    </div>
+                    <h3>Health Insurance</h3>
+                    <p>Access quality healthcare with our comprehensive medical insurance plans.</p>
+                    <ul class="product-features">
+                        <li>Inpatient coverage</li>
+                        <li>Outpatient services</li>
+                        <li>Maternity benefits</li>
+                        <li>Dental & optical</li>
+                    </ul>
+                    <a href="#quote" class="btn-secondary">Get Quote</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-icon">✈️</span>
+                    </div>
+                    <h3>Travel Insurance</h3>
+                    <p>Travel with confidence knowing you're protected against unexpected events.</p>
+                    <ul class="product-features">
+                        <li>Medical emergencies</li>
+                        <li>Trip cancellation</li>
+                        <li>Lost baggage</li>
+                        <li>Flight delays</li>
+                    </ul>
+                    <a href="#quote" class="btn-secondary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Claims Section -->
+    <section id="claims" class="claims-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">File a Claim</h2>
+            <p class="section-subtitle">We're here to help when you need us most. File your claim quickly and easily.</p>
+            
+            <div class="claims-grid">
+                <div class="claim-option">
+                    <div class="claim-icon">📱</div>
+                    <h3>Online Claims</h3>
+                    <p>Submit your claim online 24/7</p>
+                    <a href="#" class="btn-secondary">File Online</a>
+                </div>
+                
+                <div class="claim-option">
+                    <div class="claim-icon">📞</div>
+                    <h3>Phone Claims</h3>
+                    <p>Call us at +254 700 000 000</p>
+                    <a href="tel:+254700000000" class="btn-secondary">Call Now</a>
+                </div>
+                
+                <div class="claim-option">
+                    <div class="claim-icon">📧</div>
+                    <h3>Email Claims</h3>
+                    <p>Send details to claims@autodirect.co.ke</p>
+                    <a href="mailto:claims@autodirect.co.ke" class="btn-secondary">Email Us</a>
+                </div>
+            </div>
+            
+            <div class="claims-process">
+                <h3>Claims Process</h3>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Report</h4>
+                        <p>Notify us immediately after an incident</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Document</h4>
+                        <p>Provide necessary documentation</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Review</h4>
+                        <p>We assess your claim promptly</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Settle</h4>
+                        <p>Receive your settlement quickly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About AutoDirect Insurance</h2>
+                    <p>AutoDirect Insurance Agency Ltd has been serving the Kenyan market for over a decade, providing reliable and comprehensive insurance solutions to individuals and businesses.</p>
+                    <p>Our commitment to excellence, customer service, and innovative solutions has made us one of the most trusted insurance providers in Kenya.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Years of Service</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50,000+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>98%</h3>
+                            <p>Satisfaction Rate</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Customer Support</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="about-image.jpg" alt="AutoDirect Team" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"AutoDirect made getting insurance so easy! The online process was smooth and I got my policy within hours."</p>
+                    <div class="testimonial-author">
+                        <strong>Jane Wanjiku</strong>
+                        <span>Nairobi</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"When I had an accident, AutoDirect handled my claim professionally and quickly. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <strong>John Kamau</strong>
+                        <span>Mombasa</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Great rates and excellent customer service. They really care about their clients."</p>
+                    <div class="testimonial-author">
+                        <strong>Mary Akinyi</strong>
+                        <span>Kisumu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <strong>Address</strong>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+254 700 000 000</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>info@autodirect.co.ke</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🕐</span>
+                        <div>
+                            <strong>Hours</strong>
+                            <p>Mon-Fri: 8AM-6PM<br>Sat: 9AM-2PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" placeholder="Phone Number" required>
+                            <select required>
+                                <option value="">Select Insurance Type</option>
+                                <option value="auto">Auto Insurance</option>
+                                <option value="home">Home Insurance</option>
+                                <option value="life">Life Insurance</option>
+                                <option value="business">Business Insurance</option>
+                                <option value="health">Health Insurance</option>
+                                <option value="travel">Travel Insurance</option>
+                            </select>
+                        </div>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>About AutoDirect</h4>
+                    <p>Your trusted insurance partner in Kenya, providing comprehensive coverage and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#insurance-types">Insurance Types</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#claims">File a Claim</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Insurance Products</h4>
+                    <ul>
+                        <li><a href="#">Auto Insurance</a></li>
+                        <li><a href="#">Home Insurance</a></li>
+                        <li><a href="#">Life Insurance</a></li>
+                        <li><a href="#">Business Insurance</a></li>
+                        <li><a href="#">Health Insurance</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 AutoDirect Insurance Agency Ltd. All rights reserved.</p>
+                <p>Licensed by the Insurance Regulatory Authority of Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
